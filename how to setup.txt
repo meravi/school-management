@@ -1,0 +1,5 @@
+create one db project2 and import project2.sql file from project2 folder 
+login for admin: /meadmin
+------thank you----
+-----Have a great day------
+--------Happy Coding Hours ----------
