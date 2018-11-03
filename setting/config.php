@@ -38,7 +38,7 @@ class project2
 	
 	/////////////////////////////// ADMINNNNNNNNNNNNNNNNN--------------------------
 	
-	public function meadmin_check($admin_username,$admin_password,$t_staff_type)
+	public function meadmin_check($admin_username,$admin_password)
 	{
 		$meadin_login_select = "select * from meadmin where admin_username='$admin_username' AND admin_password='$admin_password'";
 		$meadmin_login_run = $this->connectdb->query($meadin_login_select);
