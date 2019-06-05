@@ -13,13 +13,15 @@ if(isset($_POST['admin_signin']))
 	
 	$admin_username = $_POST['admin_username'];
 	$admin_password = $_POST['admin_password'];
+	$t_staff_type = $_POST['t_staff_type'];
+	
 	if($admin_username=="" AND $admin_password=="")
 	{
 		echo "<script>alert('Enter Your Username & Password');</script>";
 	}
 	else
 	{
-		$melogin = $ravi->meadmin_check($admin_username,$admin_password);
+		$melogin = $ravi->meadmin_check($admin_username,$admin_password,$t_staff_type);
 			if($melogin==1)
 	{
 	$_SESSION['meadmin'] = 	$admin_username;
